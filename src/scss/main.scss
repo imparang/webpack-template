@@ -2,3 +2,23 @@ div {
   display: flex;
 }
  
+//  responsive 
+@mixin breakpoint($bp){
+  $breakpoints: (
+      sm: 600px,
+      md: 1000px,
+      lg: 1400px
+  );
+  
+  @media all and (max-width: map-get($breakpoints, $bp)) {
+      @content;
+  }
+}
+
+
+.btn {
+  width: 200px;
+  @include breakpoint(sm) {
+      width: 100px;
+  };
+}
