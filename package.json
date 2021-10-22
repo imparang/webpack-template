@@ -9,7 +9,7 @@
     "babel": "babel src/main.js --out-dir dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "", 
   "license": "ISC",
   "browserslist": [
     "last 2 versions",
